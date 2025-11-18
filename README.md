@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=21236458&assignment_repo_type=AssignmentRepo)
 # Проект: Мини-каталог фильмов на FastAPI
 
 ## Цель задания
@@ -105,3 +106,34 @@ GET /movies/3
 
    👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)  
    и протестируй все эндпоинты через Swagger UI.
+
+## Инструкция по запуску проекта
+
+### Скачайте репозиторий
+- git clone https://github.com/<your_username>/olva-fastapi-firstapp-Shaken-Dan.git
+
+### Запустите Docker
+- docker compose up --build
+
+### Главная страница: список всех фильмов
+- http://localhost:8000/movies
+
+### Просмотр фильма по ID
+- http://localhost:8000/movies/1
+
+### Фильтрация фильмов по жанру и году
+- http://localhost:8000/movies?genre=sci-fi&year=2010
+
+### Ограничение количества фильмов
+- http://localhost:8000/movies?limit=2
+
+### Сортировка по году
+- http://localhost:8000/movies?sort=year
+
+### Документация API
+- Swagger: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
+
+
+#### Автор 
+Shaken-Dan Bolatuly
